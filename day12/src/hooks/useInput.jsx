@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useState} from "react";
 
 function useInput() {
     const [input, setInput] = useState({
@@ -6,6 +6,8 @@ function useInput() {
         address:"",
         request:""
     });
+
+
     const onChange = (e) => {
         setInput({
             ...input, [e.target.name]:e.target.value
